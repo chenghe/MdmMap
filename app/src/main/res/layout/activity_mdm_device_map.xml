@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="4"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/user"
+            android:text="头像" />
+
+        <Button
+            android:id="@+id/bt_now"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/bt_login"
+            android:text="实时"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/bt_history"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bt_login"
+            android:text="历史"
+            android:textColor="@color/colorWhite" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fence"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="300dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/cb_fence"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:checked="false"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tv_fence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="显示地址围栏" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_icon_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="400dp"
+            android:layout_gravity="right"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_mark1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="上午" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_mark4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="中午" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_mark8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="下午" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_grey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="地址围栏外" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="张三"
+                android:textColor="@color/auxiliary_right"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bt_logout"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@color/btPositive"
+                android:text="退出"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bt_start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_orc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:background="@color/top_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="机构"
+                    android:textColor="@color/content_two" />
+
+                <com.zsmarter.mdmDevice.util.PopDropDownMenu
+                    android:id="@+id/drop_menu"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.zsmarter.mdmDevice.util.OrgChooseView
+                    android:id="@+id/org_choose_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:visibility="gone"></com.zsmarter.mdmDevice.util.OrgChooseView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/top_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="选择时间"
+                    android:textColor="@color/content_two" />
+
+                <com.zsmarter.mdmDevice.util.RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_first"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="3小时" />
+
+                        <RadioButton
+                            android:id="@+id/rb_second"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="6小时" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/rb_third"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="12小时" />
+
+                        <RadioButton
+                            android:id="@+id/rb_fourth"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="1天" />
+                    </LinearLayout>
+                </com.zsmarter.mdmDevice.util.RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/top_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="选择设备"
+                android:textColor="@color/content_two" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_device_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_switch_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址围栏"/>
+                <Switch
+                    android:id="@+id/switch_button"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_start"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/blue_primary"
+                android:text="显示坐标"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/bt_track"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_color"
+                android:text="显示轨迹"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

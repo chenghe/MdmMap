@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="loginRadiusLine">#e9e9e9</color>
+    <color name="loginEditorBackground">#f7f7f7</color>
+    <color name="btPositive">#ef453b</color>
+    <color name="btNegative">#ef453b</color>
+
+    <!-- 自定义文字色值 -->
+    <color name="title_one">#000000</color> <!-- 一级标题颜色 -->
+    <color name="top_text">#5b5b5b</color> <!-- 顶部文字颜色 -->
+    <color name="content_two">#888888</color> <!-- 二级内容颜色 -->
+    <color name="auxiliary_right">#000000</color> <!-- 右侧辅助色  auxiliary：辅助的意思 -->
+    <color name="annotation_little">#dcdcdc</color> <!-- 时间等小注释色，白色背景用，很少用 -->
+    <color name="top_label_unclick">#adb0b6</color> <!-- 顶部标签未点击颜色 -->
+    <color name="top_bg">#f8f8f8</color>  <!-- 背景 -->
+    <color name="blue_primary">#2196F3</color>
+    <color name="main_color">#21b589</color>  <!-- 主色 (默认的文字颜色)-->
+    <color name="attention_radiotherapy_color">#91c46c</color>
+    <color name="green_text">#939393</color>
+    <color name="num_color">#F3B562</color>
+    <color name="text_one">#2a2a2a</color>
+    <color name="text_two">#404040</color>
+
+
+    <!-- common -->
+    <color name="app_color_blue">#00A8E1</color>
+    <color name="app_color_blue_disabled">#8000A8E1</color>
+    <color name="app_color_blue_pressed">#c000A8E1</color>
+
+    <color name="app_color_blue_2">#31BDF3</color>
+    <color name="app_color_blue_2_disabled">#7F31BDF3</color>
+    <color name="app_color_blue_2_pressed">#7F31BDF3</color>
+
+    <color name="app_color_theme_1">#EF5362</color> <!-- Grapefruit -->
+    <color name="app_color_theme_2">#FE6D4B</color> <!-- Bittersweet -->
+    <color name="app_color_theme_3">#FFCF47</color> <!-- Sunflower -->
+    <color name="app_color_theme_4">#9FD661</color> <!-- Grass -->
+    <color name="app_color_theme_5">#3FD0AD</color> <!-- Mint -->
+    <color name="app_color_theme_6">#2BBDF3</color> <!-- Aqua -->
+    <color name="app_color_theme_7">#5A9AEF</color> <!-- Blue Jeans -->
+    <color name="app_color_theme_8">#AC8FEF</color> <!-- Lavender -->
+    <color name="app_color_theme_9">#EE85C1</color> <!-- Pink Rose -->
+
+    <color name="app_color_description">@color/qmui_config_color_gray_5</color>
+
+    <color name="bar_divider">#D4D6D8</color>
+    <color name="tab_panel_bg">#ffffff</color>
+    <color name="tab_panel_divider">@color/bar_divider</color>
+
+    <!-- Components 组件 -->
+    <color name="radiusImageView_border_color">@color/app_color_theme_2</color>
+    <color name="radiusImageView_selected_border_color">@color/app_color_theme_1</color>
+    <color name="radiusImageView_selected_mask_color">#7FEF5362</color>
+
+    <!-- Helper 系列界面 -->
+
+    <!-- DropDownMenu -->
+    <color name="no_color">#00000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="schedule_text_default">#333333</color>
+    <color name="midmenu">#fafafa</color>
+    <color name="redline">#ff6600</color>
+    <color name="other_day_color">#666666</color>
+    <color name="default_menu_back">#f1f1f1</color>
+    <color name="default_menu_press_back">#fafafa</color>
+    <color name="divider_line">#ededed</color>  <!-- 分割线 -->
+    <color name="app_green">#58c4a5</color><!-- 绿色主色 -->
+
+    <!-- ColorHelper 颜色工具 -->
+    <color name="colorHelper_square_alpha_background">@color/app_color_theme_4</color>
+    <color name="colorHelper_square_from_ratio_background">@color/app_color_blue</color>
+    <color name="colorHelper_square_to_ratio_background">@color/app_color_theme_3</color>
+</resources>

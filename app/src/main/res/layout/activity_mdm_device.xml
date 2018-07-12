@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activity.MdmDeviceActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#222831"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                tl:tl_indicator_color="#393E46"
+                tl:tl_indicator_corner_radius="5dp"
+                tl:tl_indicator_margin_left="2dp"
+                tl:tl_indicator_margin_right="2dp"
+                tl:tl_indicator_style="BLOCK"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </android.support.v4.view.ViewPager>
+
+            <Button
+                android:id="@+id/bt_location"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:text="显示设备位置" />
+
+            <Button
+                android:id="@+id/bt_reset_location"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:text="隐藏设备位置" />
+
+            <Button
+                android:id="@+id/bt_track"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:text="显示设备轨迹" />
+
+            <Button
+                android:id="@+id/bt_reset_track"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:text="隐藏设备轨迹" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <com.zsmarter.mdmDevice.DownloadProgressButton
+            android:id="@+id/download"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:backgroud_color="@color/colorPrimary"
+            app:backgroud_second_color="#fff"
+            app:backgroud_strokeWidth="2dp"
+            app:radius="15"
+            app:text_color="@color/colorPrimary"
+            app:text_covercolor="#fff" />
+    </LinearLayout>
+
+
+</LinearLayout>

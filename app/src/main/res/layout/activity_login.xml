@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:src="@drawable/chengde_logo"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="#282828" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="移动展业系统"
+            android:textSize="24sp"
+            android:textColor="#0e0e0e"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@drawable/login_bg">
+        
+        <LinearLayout
+
+            android:layout_width="320dp"
+            android:layout_height="350dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="120dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/login_editor_bg">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="欢迎登陆"
+                android:textSize="20sp"
+                android:textColor="#2f2d3b"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/loginRadiusLine"/>
+
+            <LinearLayout
+                android:id="@+id/ll_username"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/login_editor"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_password"/>
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#2f2d3b"
+                    android:hint="请输入用户名"
+                    android:textColorHint="#e3e3e3"
+                    android:inputType="textEmailAddress"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_password"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/login_editor"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_password"/>
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#2f2d3b"
+                    android:hint="请输入用户名"
+                    android:textColorHint="#e3e3e3"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bt_login"
+                android:text="登录"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="承德银行 版权所有"
+        android:textColor="#b8b8b8"
+        android:textSize="14sp"
+        android:gravity="center"
+        />
+
+</LinearLayout>
